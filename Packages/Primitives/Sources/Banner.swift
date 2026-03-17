@@ -13,6 +13,7 @@ public enum BannerEvent: String, Codable, CaseIterable, Equatable, Sendable {
 	case suspiciousAsset
 	case onboarding
 	case tradePerpetuals
+	case deployToken
 }
 
 public enum BannerState: String, Codable, CaseIterable, Equatable, Sendable {

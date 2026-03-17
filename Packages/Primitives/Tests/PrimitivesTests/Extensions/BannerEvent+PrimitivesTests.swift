@@ -28,4 +28,11 @@ struct BannerEventComparableTests {
             .stake
         ])
     }
+
+    @Test
+    func deployTokenSortedAfterTradePerpetuals() {
+        let events: [BannerEvent] = [.deployToken, .tradePerpetuals, .stake]
+        let sorted = events.sorted()
+        #expect(sorted == [.stake, .tradePerpetuals, .deployToken])
+    }
 }

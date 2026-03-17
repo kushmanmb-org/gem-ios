@@ -177,6 +177,12 @@ public enum Localized {
       /// Trade Perpetuals on Hyperliquid
       public static let title = Localized.tr("Localizable", "banner.perpetuals.title", fallback: "Trade Perpetuals on Hyperliquid")
     }
+    public enum DeployToken {
+      /// Create and deploy custom tokens on Ethereum, BSC, Polygon, and Solana.
+      public static let description = Localized.tr("Localizable", "banner.deploy_token.description", fallback: "Create and deploy custom tokens on Ethereum, BSC, Polygon, and Solana.")
+      /// Deploy Your Own Token
+      public static let title = Localized.tr("Localizable", "banner.deploy_token.title", fallback: "Deploy Your Own Token")
+    }
     public enum Stake {
       /// Earn %@ rewards on your stake while you sleep.
       public static func description(_ p1: Any) -> String {

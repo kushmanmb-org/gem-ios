@@ -256,6 +256,7 @@ extension AssetSceneViewModel {
             case .tradePerpetuals:
                 UIApplication.shared.open(DeepLink.perpetuals.localUrl)
                 preferences.isPerpetualEnabled = true
+            case .deployToken: break
             }
         case .button(let bannerButton):
             switch bannerButton {

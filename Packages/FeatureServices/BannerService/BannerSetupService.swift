@@ -21,6 +21,7 @@ public struct BannerSetupService: Sendable {
     public func setup() throws {
         try setupStake()
         try setupHypercorePerpetuals()
+        try setupDeployToken()
     }
 
     public func setupWallet(wallet: Wallet) throws  {
@@ -62,5 +63,12 @@ public struct BannerSetupService: Sendable {
             NewBanner.tradePerpetuals(assetId: Chain.hyperCore.assetId),
             NewBanner.tradePerpetuals(assetId: Chain.hyperliquid.assetId)
         ])
+    }
+
+    private func setupDeployToken() throws {
+        let chains: [Chain] = [.ethereum, .smartchain, .polygon, .solana]
+        try store.addBanners(chains.map {
+            NewBanner.deployToken(assetId: $0.assetId)
+        })
     }
 }

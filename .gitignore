@@ -52,3 +52,16 @@ sources.png
 
 # rust
 target/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+.node_repl_history
+*.tgz
+dist/

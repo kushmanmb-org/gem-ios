@@ -4,7 +4,7 @@ Thank you for your interest in contributing to Gem Wallet! If you have any quest
 
 ## Feature Requests and Bug Reports
 
-Feature requests and bug reports should be posted as [Github Issues](issues/new).
+Feature requests and bug reports should be posted as [Github Issues](https://github.com/kushmanmb-org/gem-ios/issues/new).
 In an issue, please describe what you did, what you expected, and what happened instead.
 
 If you think that you have identified an issue with Gem Wallet that might compromise
@@ -24,7 +24,7 @@ Before sending a feature pull request, it's always better to open a issue first 
 ### Branch Model
 We use the [Fork and Pull](https://git-scm.com/book/en/v2/Git-Basics-Fork-and-Pull) model and [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) to work on this repository.
 
-Main branch is `master`. This is the branch that is used to work on the official release.
+Main branch is `main`. This is the branch that is used to work on the official release.
 
 ### Commit Convention
 We use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages. Please read the guide through if you aren't familiar with it already.

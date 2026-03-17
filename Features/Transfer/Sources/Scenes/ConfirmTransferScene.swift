@@ -125,6 +125,10 @@ extension ConfirmTransferScene {
             )
         case .perpetualModifyPosition(let model):
             ListItemView(model: model.listItemModel)
+        case .transactionData(let rows):
+            ForEach(Array(rows.enumerated()), id: \.offset) { _, row in
+                ListItemView(model: row)
+            }
         case let .networkFee(model, selectable):
             if selectable {
                 NavigationCustomLink(

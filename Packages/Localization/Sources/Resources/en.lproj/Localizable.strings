@@ -516,3 +516,6 @@
 "banner.deploy_token.description" = "Create and deploy custom tokens on Ethereum, BSC, Polygon, and Solana.";
 "recent_activity.title" = "Recent";
 "errors.no_data_available" = "No data available";
+"transfer.data.title" = "Data";
+"transfer.data.function" = "Function";
+"transfer.data.method_id" = "MethodID";

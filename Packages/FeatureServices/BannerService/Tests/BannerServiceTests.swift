@@ -29,6 +29,7 @@ struct BannerServiceTests {
             .event(.onboarding),
             .event(.accountActivation),
             .event(.accountBlockedMultiSignature),
+            .event(.deployToken),
             .button(.buy),
             .button(.receive),
         ]

@@ -159,4 +159,12 @@ extension NewBanner {
             state: .active
         )
     }
+
+    public static func deployToken(assetId: AssetId) -> NewBanner {
+        NewBanner(
+            assetId: assetId,
+            event: .deployToken,
+            state: .active
+        )
+    }
 }

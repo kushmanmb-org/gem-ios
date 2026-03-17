@@ -38,6 +38,8 @@ struct BannerViewModel {
             return AssetImage.image(Images.System.bitcoin)
         case .tradePerpetuals:
             return AssetImage.image(Images.Perpetuals.perpetuals)
+        case .deployToken:
+            return AssetImage.image(Images.Logo.logo)
         }
     }
 
@@ -60,6 +62,7 @@ struct BannerViewModel {
             return Localized.Banner.AssetStatus.title
         case .onboarding: return Localized.Banner.Onboarding.title
         case .tradePerpetuals: return Localized.Banner.Perpetuals.title
+        case .deployToken: return Localized.Banner.DeployToken.title
         }
     }
 
@@ -90,6 +93,7 @@ struct BannerViewModel {
             return Localized.Banner.AssetStatus.description
         case .onboarding: return Localized.Banner.Onboarding.description
         case .tradePerpetuals: return Localized.Banner.Perpetuals.description
+        case .deployToken: return Localized.Banner.DeployToken.description
         }
     }
 
@@ -105,7 +109,8 @@ struct BannerViewModel {
                 .accountBlockedMultiSignature,
                 .activateAsset,
                 .suspiciousAsset,
-                .tradePerpetuals: 28
+                .tradePerpetuals,
+                .deployToken: 28
         case .onboarding: .image.medium
         }
     }
@@ -116,7 +121,8 @@ struct BannerViewModel {
             .accountActivation,
             .activateAsset,
             .suspiciousAsset,
-            .tradePerpetuals: 14
+            .tradePerpetuals,
+            .deployToken: 14
         case .enableNotifications,
             .accountBlockedMultiSignature,
             .onboarding: 0
@@ -137,7 +143,8 @@ struct BannerViewModel {
             .enableNotifications,
             .activateAsset,
             .onboarding,
-            .tradePerpetuals:
+            .tradePerpetuals,
+            .deployToken:
             return.none
         case .accountActivation:
             return asset?.chain.accountActivationFeeUrl
@@ -164,7 +171,8 @@ struct BannerViewModel {
                 .accountBlockedMultiSignature,
                 .activateAsset,
                 .suspiciousAsset,
-                .tradePerpetuals: .list
+                .tradePerpetuals,
+                .deployToken: .list
         case .onboarding: .banner
         }
     }
@@ -177,7 +185,8 @@ struct BannerViewModel {
                 .accountBlockedMultiSignature,
                 .activateAsset,
                 .suspiciousAsset,
-                .tradePerpetuals: []
+                .tradePerpetuals,
+                .deployToken: []
         case .onboarding: [
             BannerButtonViewModel(button: .buy, banner: banner),
             BannerButtonViewModel(button: .receive, banner: banner)

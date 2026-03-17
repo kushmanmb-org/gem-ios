@@ -36,8 +36,8 @@ The app is developed using SwiftUI. The codebase also includes a [Core](https://
 ## 🏄‍♂️ Contributing
 
 - Look in to our [Github Issues](https://github.com/kushmanmb-org/gem-ios/issues)
-- See progress on our [Github Project Board](https://github.com/orgs/kushmanmb-org/projects/2)
-- Public [Roadmap](https://github.com/orgs/kushmanmb-org/projects/4)
+- See progress on our [Github Project Board](https://github.com/orgs/gemwalletcom/projects/2)
+- Public [Roadmap](https://github.com/orgs/gemwalletcom/projects/4)
 
 See our [Contributing Guidelines](./CONTRIBUTING.md).
 

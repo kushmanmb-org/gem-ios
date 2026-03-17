@@ -98,6 +98,10 @@ public final class ConfirmTransferSceneViewModel {
     var detailsViewModel: ConfirmDetailsViewModel {
         ConfirmDetailsViewModel(type: data.type, metadata: metadata)
     }
+
+    var transactionDataViewModel: ConfirmTransactionDataViewModel {
+        ConfirmTransactionDataViewModel(type: data.type)
+    }
 }
 
 // MARK: - ListSectionProvideable
@@ -106,7 +110,7 @@ extension ConfirmTransferSceneViewModel: ListSectionProvideable {
     public var sections: [ListSection<ConfirmTransferItem>] {
         [
             ListSection(type: .header, [.header]),
-            ListSection(type: .details, [.app, .network, .sender, .recipient, .memo, .details]),
+            ListSection(type: .details, [.app, .network, .sender, .recipient, .memo, .details, .transactionData]),
             ListSection(type: .fee, [.networkFee]),
             ListSection(type: .error, [.error])
         ]
@@ -132,6 +136,8 @@ extension ConfirmTransferSceneViewModel: ListSectionProvideable {
             ConfirmMemoViewModel(type: data.type, recipientData: data.recipientData)
         case .details:
             detailsViewModel
+        case .transactionData:
+            transactionDataViewModel
         case .networkFee:
             ConfirmNetworkFeeViewModel(
                 state: state,

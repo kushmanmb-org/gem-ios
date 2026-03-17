@@ -1340,6 +1340,14 @@ public enum Localized {
       /// Smart Contract
       public static let title = Localized.tr("Localizable", "transfer.smart_contract.title", fallback: "Smart Contract")
     }
+    public enum Data {
+      /// Data
+      public static let title = Localized.tr("Localizable", "transfer.data.title", fallback: "Data")
+      /// Function
+      public static let function = Localized.tr("Localizable", "transfer.data.function", fallback: "Function")
+      /// MethodID
+      public static let methodId = Localized.tr("Localizable", "transfer.data.method_id", fallback: "MethodID")
+    }
     public enum Stake {
       /// Stake
       public static let title = Localized.tr("Localizable", "transfer.stake.title", fallback: "Stake")

@@ -24,6 +24,7 @@ public enum ConfirmTransferItem: Identifiable, Equatable, Sendable {
     case recipient
     case memo
     case details
+    case transactionData
     case networkFee
     case error
 
@@ -41,6 +42,7 @@ public enum ConfirmTransferItemModel {
     case networkFee(ListItemModel, selectable: Bool)
     case perpetualDetails(PerpetualDetailsViewModel)
     case perpetualModifyPosition(PerpetualModifyViewModel)
+    case transactionData([ListItemModel])
     case error(title: String, error: Error, onInfoAction: VoidAction)
     case empty
 }
